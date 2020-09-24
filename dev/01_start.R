@@ -16,11 +16,11 @@
 golem::fill_desc(
   pkg_name = "cryptotradingboard", # The Name of the package containing the App 
   pkg_title = "crypto_trading_board", # The Title of the package containing the App 
-  pkg_description = "coinmarketcap plus some social media trends :)", # The Description of the package containing the App 
+  pkg_description = "Coinmarketcap plus some social media trends.", # The Description of the package containing the App 
   author_first_name = "Alexandre", # Your First Name
   author_last_name = "Vitet", # Your Last Name
   author_email = "alexandre.vitet@gmail.com", # Your Email
-  repo_url = NULL # The URL of the GitHub Repo (optional) 
+  repo_url = "https://github.com/dpvalexandre/cryptodashboard" # The URL of the GitHub Repo (optional) 
 )     
 
 ## Set {golem} options ----
