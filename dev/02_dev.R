@@ -15,9 +15,15 @@
 
 ## Dependencies ----
 ## Add one line by package you want to add as dependency
+usethis::use_pipe()
 usethis::use_package( "thinkr" )
 usethis::use_package( "httr" )
 usethis::use_package( "jsonlite" )
+usethis::use_package( "DT" )
+usethis::use_package( "purrr" )
+usethis::use_package( "magrittr" )
+usethis::use_package( "dplyr" )
+usethis::use_package("shinydashboard")
 
 ## Add modules ----
 ## Create a module infrastructure in R/

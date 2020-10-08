@@ -9,8 +9,20 @@ app_ui <- function(request) {
     # Leave this function for adding external resources
     golem_add_external_resources(),
     # List the first level UI elements here 
-    fluidPage(
-      h1("cryptotradingboard")
+    shinydashboard::dashboardPage(
+      shinydashboard::dashboardHeader(title = 'Cryptradingboard'),
+      shinydashboard::dashboardSidebar(disable = TRUE),
+      shinydashboard::dashboardBody(
+      fluidRow(
+        column(width=12,
+               p("Hello and welcome to my own version coinmarket cap. To make this website, I used Rshiny, an R framework for making web application and also several API from coingecko and coinmarketcap. Keep in mind that this website in it's early stage of developpment before making any trade based on what you can see here.")
+               ),
+        column(width = 12,
+               DT::DTOutput("crypto_info"))
+        )
+        
+      )
+      
     )
   )
 }

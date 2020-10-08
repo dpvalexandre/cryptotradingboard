@@ -20,7 +20,7 @@ golem::fill_desc(
   author_first_name = "Alexandre", # Your First Name
   author_last_name = "Vitet", # Your Last Name
   author_email = "alexandre.vitet@gmail.com", # Your Email
-  repo_url = "https://github.com/dpvalexandre/cryptodashboard" # The URL of the GitHub Repo (optional) 
+  repo_url = NULL# The URL of the GitHub Repo (optional) 
 )     
 
 ## Set {golem} options ----
@@ -47,7 +47,7 @@ golem::use_recommended_deps()
 ## Favicon ----
 # If you want to change the favicon (default is golem's one)
 golem::remove_favicon()
-golem::use_favicon() # path = "path/to/ico". Can be an online file. 
+golem::use_favicon("inst/app/www/btc_favicon.ico") # path = "path/to/ico". Can be an online file. 
 
 ## Add helper functions ----
 golem::use_utils_ui()
